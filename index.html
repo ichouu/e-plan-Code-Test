@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>PDF code challenge</title>
+    <script type="text/javascript">
+       function showHideElement(element){
+           var elem = document.getElementById(element);
+
+           if (elem.style.display=="none"){
+               elem.style.display="block"
+           }
+           else{
+               elem.style.display="none"
+           }
+       }
+   </script>
+  </head>
+  <body>
+      <div style="position:absolute;z-index:100;background-color:Green;height:100px;width:100px;margin-left:200px;">On top of PDF file Text box</div>
+      <div style="position:absolute;z-index:20;margin-left:200px;">
+        <iframe visible="true"  id="Iframe1" height="100" width="100" runat="server" frameborder="0" scrolling="auto"></iframe>
+      </div>
+      <div style="position:absolute;z-index:10;margin-left:100px;">
+        <iframe visible="true" id="ipdf" src="./test.pdf" height="1000" width="1000" runat="server" frameborder="0" scrolling="auto" ></iframe>
+      </div>
+    </body>
+</html>
